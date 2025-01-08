@@ -7,7 +7,7 @@ const port = 3000;
 app.use(express.static('static'));
 
 app.get('/', (req, res) => {
-  res.sendFile(resolve(__dirname, 'pages/index.html'));
+  res.send("api testing");
 
 });
 app.get('/cart-total', (req, res) => {
